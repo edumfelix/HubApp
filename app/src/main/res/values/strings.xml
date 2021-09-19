@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Gerenciador de tarefas</string>
+    <string name="app_name">Hub</string>
     <string name="hint_tarefa">nome da tarefa:</string>
     <string name="txt_data">Selecionar data</string>
     <string name="txt_hora">Selecionar hora</string>
