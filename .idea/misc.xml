@@ -11,8 +11,8 @@
         <entry key="..\:/AndroidStudioProjects/TaskList1/app/src/main/res/layout/activity_cadastrar_tarefa.xml" value="0.209375" />
         <entry key="..\:/AndroidStudioProjects/TaskList1/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/AndroidStudioProjects/TaskList1/app/src/main/res/layout/adapter_listar_tarefas.xml" value="0.209375" />
-        <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_alterar_tarefa.xml" value="0.33" />
-        <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_cadastrar_tarefa.xml" value="0.10283687943262411" />
+        <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_alterar_tarefa.xml" value="0.3021148036253776" />
+        <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_cadastrar_tarefa.xml" value="0.22" />
         <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_frases.xml" value="0.33" />
         <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_hub.xml" value="0.22137404580152673" />
         <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
@@ -20,6 +20,8 @@
         <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/adapter_listar_tarefas.xml" value="0.25" />
         <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/fragment_first.xml" value="0.1" />
         <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/lista_main.xml" value="0.1" />
+        <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/layout/tarefa_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JPedroSTX/AndroidStudioProjects/TaskList/app/src/main/res/menu/context_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/guilherme/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_alterar_tarefa.xml" value="0.33" />
         <entry key="..\:/Users/guilherme/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_cadastrar_tarefa.xml" value="0.33" />
         <entry key="..\:/Users/guilherme/AndroidStudioProjects/TaskList/app/src/main/res/layout/activity_main.xml" value="0.25" />

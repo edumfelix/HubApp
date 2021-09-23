@@ -1,54 +1,54 @@
 package com.guina.tasklist;
 
-import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import com.guina.tasklist.R;
+import com.guina.tasklist.Tarefa;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Locale;
 
-public class ListarTarefasAdapter extends BaseAdapter {
+public class ListarTarefasAdapter extends ArrayAdapter<Tarefa> {
 
-    private final List<Tarefa> tarefas;
-    private final Activity activity;
+    private final Context context;
 
-    public ListarTarefasAdapter(List<Tarefa> tarefas, Activity activity) {
-        this.tarefas = tarefas;
-        this.activity = activity;
+
+    public ListarTarefasAdapter(Context context, List<Tarefa> tarefas){
+        super(context, R.layout.tarefa_item, tarefas);
+
+        this.context = context;
     }
 
+    @NonNull
     @Override
-    public int getCount() {
-        return tarefas.size();
-    }
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        LayoutInflater layoutInflater = LayoutInflater.from(context);
+        View v = layoutInflater.inflate(R.layout.tarefa_item, null);
 
-    @Override
-    public Object getItem(int position) {
-        return tarefas.get(position);
-    }
+        TextView textDescricao = v.findViewById(R.id.txt_item_descricao);
+        TextView textDataHora = v.findViewById(R.id.txt_item_data_hora);
 
-    @Override
-    public long getItemId(int position) {
-        return tarefas.get(position).getId();
-    }
+        Tarefa tarefa = getItem(position);
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        View view = activity.getLayoutInflater().inflate(R.layout.adapter_listar_tarefas, parent, false);
-        Tarefa tarefa = tarefas.get(position);
-        TextView txtItemDescricao = (TextView) view.findViewById(R.id.txt_item_tarefa);
-        TextView txtItemDataHora = (TextView) view.findViewById(R.id.txt_item_data_hora);
-        txtItemDescricao.setText(tarefa.getDescricao());
-        SimpleDateFormat formatacao = new SimpleDateFormat("dd/MM/yyyy HH:mm");
-        txtItemDataHora.setText(formatacao.format(tarefa.getDataHora()));
+        textDescricao.setText(tarefa.getDescricao());
+        SimpleDateFormat formatacao = new SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.US);
+        textDataHora.setText(formatacao.format(tarefa.getDataHora()));
         if (tarefa.isRealizado()){
-            txtItemDescricao.setTextColor(Color.GRAY);
-            txtItemDescricao.setPaintFlags(txtItemDescricao.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
+            textDescricao.setTextColor(Color.GRAY);
+            textDescricao.setPaintFlags(textDescricao.getPaintFlags()| Paint.STRIKE_THRU_TEXT_FLAG);
         }
-        return view;
+        return v;
+
     }
 }

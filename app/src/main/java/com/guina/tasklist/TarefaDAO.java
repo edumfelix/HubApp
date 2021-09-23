@@ -6,25 +6,25 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.guina.tasklist.Tarefa;
 
 import java.util.List;
 
 @Dao
 public interface TarefaDAO {
 
-    @Query("select * from tarefas")
-    List<Tarefa> listarTodos();
+    @Query("SELECT * FROM tarefa")
+    List<Tarefa> getAll();
 
-    @Query("select * from tarefas where id = :id")
+    @Query("select * from tarefa where id = :id")
     Tarefa listarUm(int id);
 
     @Insert
-    void inserir(Tarefa tarefa);
+    void insert(Tarefa tarefa);
+
+    @Delete
+    void delete(Tarefa tarefa);
 
     @Update
     void alterar(Tarefa tarefa);
 
-    @Delete
-    void deletar(Tarefa tarefa);
 }

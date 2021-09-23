@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Hub</string>
-    <string name="hint_tarefa">nome da tarefa:</string>
+    <string name="hint_tarefa">Nome da tarefa:</string>
     <string name="txt_data">Selecionar data</string>
-    <string name="txt_hora">Selecionar hora</string>
+    <string name="txt_hora">Selecionar horário</string>
     <string name="btn_salvar">Salvar tarefa</string>
     <string name="btn_alterar">Alterar tarefa</string>
     <string name="txt_titulo">Cadastre sua tarefa</string>
@@ -18,5 +18,6 @@
     <string name="txt_sobre">Aplicativo criado com intuito de facilitar a vida do usuário reunindo funções em um único aplicativo. \n\n Foi desenvolvido por
     Eduardo Felix, Guilherme Leite e João Pedro Cavalcante no módulo 3 do curso de programação para dispositivos móveis do programa federal           QualificaMais.
     </string>
+    <string name="titulo">Tarefas</string>
 
 </resources>

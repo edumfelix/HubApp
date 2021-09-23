@@ -1,16 +1,19 @@
 package com.guina.tasklist;
 
+import androidx.room.ColumnInfo;
 import androidx.room.Entity;
-import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "tarefas")
+
+@Entity
 public class Tarefa {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
+    @ColumnInfo(name = "t_descricao")
     private String descricao;
     private boolean realizado = false;
+    @ColumnInfo(name = "data_hora")
     private long dataHora;
 
     public Tarefa() {
