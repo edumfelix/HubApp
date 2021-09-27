@@ -4,37 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.TaskList"
-    >
+    android:theme="@style/Theme.TaskList">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="58dp"
         android:background="?attr/colorPrimary"
-        android:elevation="4dp"
         android:backgroundTint="@color/black"
-        app:title="@string/txt_boavindas"
-        app:titleTextColor="@color/white"
+        android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/txt_boavindas"
+        app:titleTextColor="@color/white" />
 
     <Button
         android:id="@+id/btn_tarefas"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_marginStart="105dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="106dp"
-        android:layout_marginBottom="597dp"
         android:backgroundTint="@color/bluelight"
         android:padding="10dp"
         android:text="@string/btn_tarefas"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_noticias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
@@ -44,15 +42,14 @@
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginStart="105dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="106dp"
-        android:layout_marginBottom="550dp"
         android:backgroundTint="@color/bluelight"
         android:padding="10dp"
         android:text="@string/btn_noticias"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_frases"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_tarefas" />
@@ -62,8 +59,9 @@
         android:layout_width="200dp"
         android:layout_height="55dp"
         android:layout_marginStart="105dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="106dp"
-        android:layout_marginBottom="406dp"
+        android:layout_marginBottom="231dp"
         android:backgroundTint="@color/bluelight"
         android:padding="10dp"
         android:text="@string/btn_frases"
@@ -78,7 +76,6 @@
         android:id="@+id/btn_sobre"
         android:layout_width="200dp"
         android:layout_height="55dp"
-        android:layout_marginTop="481dp"
         android:backgroundTint="@color/bluelight"
         android:padding="10dp"
         android:text="@string/btn_sobre"
@@ -86,8 +83,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_noticias" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

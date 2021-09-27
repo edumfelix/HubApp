@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.guina.tasklist" >
+    package="com.guina.tasklist">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -29,6 +31,7 @@
             android:parentActivityName=".TELAS.MainActivity" />
         <activity android:name=".TELAS.SobreActivity"/>
         <activity android:name=".TELAS.FrasesActivity"/>
+        <activity android:name=".TELAS.NoticiasActivity"/>
     </application>
 
 </manifest>

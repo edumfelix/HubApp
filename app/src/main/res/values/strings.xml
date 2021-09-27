@@ -19,5 +19,11 @@
     Eduardo Felix, Guilherme Leite e João Pedro Cavalcante no módulo 3 do curso de programação para dispositivos móveis do programa federal           QualificaMais.
     </string>
     <string name="titulo">Tarefas</string>
+    <string name="txt_titulo_noticias">Notícias</string>
+    <string name="btn_g1">G1 Globo</string>
+    <string name="btn_thenewscc">The News cc</string>
+    <string name="btn_thenewsyorktimes">The NY Times</string>
+    <string name="btn_estadao">Estadão</string>
+    <string name="btn_cnn">CNN</string>
 
 </resources>
