@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#C8C7C7"
+    android:theme="@style/Theme.TaskList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/black"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/txt_titulo_noticias"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:titleTextColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_estadao"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/bluelight"
+        android:padding="10dp"
+        android:text="@string/btn_estadao"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_g1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_CNN" />
+
+    <Button
+        android:id="@+id/btn_CNN"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/bluelight"
+        android:padding="10dp"
+        android:text="@string/btn_cnn"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_estadao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_tncc" />
+
+    <Button
+        android:id="@+id/btn_tncc"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/bluelight"
+        android:padding="10dp"
+        android:text="@string/btn_thenewscc"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_CNN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar2" />
+
+    <Button
+        android:id="@+id/btn_g1"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/bluelight"
+        android:padding="10dp"
+        android:text="@string/btn_g1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tnyt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_estadao" />
+
+    <Button
+        android:id="@+id/btn_tnyt"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="218dp"
+        android:backgroundTint="@color/bluelight"
+        android:padding="10dp"
+        android:text="@string/btn_thenewsyorktimes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_g1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
