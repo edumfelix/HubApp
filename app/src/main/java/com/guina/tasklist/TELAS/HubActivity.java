@@ -18,6 +18,13 @@ import com.guina.tasklist.R;
 public class HubActivity extends AppCompatActivity {
     private Button btnTarefas, btnNoticias, btnSobre, btnFrases;
 
+    //Teste de conexão para pagina notícias
+    public boolean Online() {
+        ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return manager.getActiveNetworkInfo() != null &&
+                manager.getActiveNetworkInfo().isConnectedOrConnecting();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +55,15 @@ public class HubActivity extends AppCompatActivity {
         btnNoticias.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (Online()){
                 startActivity(IrNoticias);
-               // startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://thenewscc.com.br/noticias/")));
             }
-        });
+            else {
+                    Snackbar.make(findViewById(R.id.layout_hub), "Ops! Parece que você não está conectado a internet!", Snackbar.LENGTH_LONG).show();
+                }
+
+                }
+            });
 
         btnSobre.setOnClickListener(new View.OnClickListener() {
             @Override
